@@ -1,4 +1,4 @@
-dbt-athena with examples;
+*dbt-athena* with examples;
 ```python
   - Seeds: Load and version-control reference data
   - Incremental loads: Efficiently load new data without reprocessing the entire dataset
