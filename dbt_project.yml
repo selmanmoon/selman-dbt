@@ -1,0 +1,23 @@
+name: 'my_dbt_project'
+version: '1.0'
+profile: 'default'
+
+config-version: 2
+
+model-paths: ["models"]
+snapshot-paths: ["snapshots"]
+seed-paths: ["data"]  # Seed dosyalarının bulunduğu dizin
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_modules"
+
+models:
+  my_dbt_project:
+    +materialized: table
+    customers:
+      +materialized: table
+
+seeds:
+  my_dbt_project:
+    +materialized: seed

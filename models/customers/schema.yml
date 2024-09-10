@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: sem__customers
+    description: "Customer data with incremental loads"
+    columns:
+      - name: customer_id
+        description: "Unique identifier for each customer"
+        tests:
+          - unique
+          - not_null  # Ensure that there are no null values
