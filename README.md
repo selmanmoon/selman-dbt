@@ -1,5 +1,4 @@
 dbt-athena with below examples;
-
   - Seeds: Load and version-control reference data
   - Incremental loads: Efficiently load new data without reprocessing the entire dataset
   - Snapshots: Capture point-in-time state of data for auditing and time travel
